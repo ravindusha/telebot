@@ -58,7 +58,7 @@
                 array("!Voice", "Empty"),
                 array("!CLOSE!")
             );
-            sendMessage($chatID, "Yay yaaaa!", keyboard($mykeyboard, 1, 0, false));
+            sendMessage($chatID, "Hello There!", keyboard($mykeyboard, 1, 0, false));
             break;
 
         case "!Photo":
@@ -70,14 +70,14 @@
             // you can pass an post data or URL too. I prefer the file id.
             // it will not work for you, because this file sent to my bot and only my bot can see this.
             // so, change the file id string
-            sendVideo($chatID, "BAADBAADQgADb5g5U1j4tJ6ycYhFAg", "Here is a sample video!");
+            sendVideo($chatID, "https://www.youtube.com/watch?v=rEq1Z0bjdwc", "Here is a sample video!");
             break;
 
         case "!Voice":
             // you can pass an post data or URL too. I prefer the file id.
             // it will not work for you, because this file sent to my bot and only my bot can see this.
             // so, change the file id string
-            sendVoice($chatID, "AwADBAADQQADb5g5U5SGvcCJ8tbjAg", "Hello, I'm arterhacker.");
+            sendVoice($chatID, "AwADBAADQQADb5g5U5SGvcCJ8tbjAg", "Hello, I'm Ravzbot.");
             sendVoice($chatID, "AwADBAADPwADb5g5UzYJ0JKgk6lxAg", "Successful.");
             break;
 
@@ -120,7 +120,7 @@
 
             } else {
                 // if not defined, send a message
-                sendMessage($chatID, "*You said:* $message\n*My answer:* Hmm.\n\nTo open the keyboard: /start");
+                //sendMessage($chatID, "*You said:* $message\n*My answer:* Hmm.\n\nTo open the keyboard: /start");
             }
         }
 ?>
