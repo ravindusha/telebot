@@ -70,7 +70,7 @@
             // you can pass an post data or URL too. I prefer the file id.
             // it will not work for you, because this file sent to my bot and only my bot can see this.
             // so, change the file id string
-            sendVideo($chatID, "https://www.youtube.com/watch?v=rEq1Z0bjdwc", "Here is a sample video!");
+            sendVideo($chatID, "http://techslides.com/demos/sample-videos/small.mp4", "Here is a sample video!");
             break;
 
         case "!Voice":
