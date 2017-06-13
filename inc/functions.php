@@ -72,7 +72,8 @@
         // $video:     Video to send. Pass a file_id as String to send a video that exists on the Telegram servers (recommended), pass an HTTP URL as a String for Telegram to get a video from the Internet, or upload a new video using multipart/form-data.
 
         sendAction($chatID, "upload_video"); // send an action; "bot is sending a video.."
-        $url = $GLOBALS["website"]."/sendVideo?video=".$video."&caption=".urlencode($caption)."&parse_mode=Markdown&chat_id=".$chatID;
+        //$url = $GLOBALS["website"]."/sendVideo?video=".$video."&caption=".urlencode($caption)."&parse_mode=Markdown&chat_id=".$chatID;
+        $url = $video."&caption=".urlencode($caption)."&parse_mode=Markdown&chat_id=".$chatID;
         file_get_contents($url);
     }
 
