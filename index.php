@@ -58,7 +58,8 @@
                 array("!Voice", "Empty"),
                 array("!CLOSE!")
             );
-            sendMessage($chatID, "Hello There!", keyboard($mykeyboard, 1, 0, false));
+            //sendMessage($chatID, "Hello There!", keyboard($mykeyboard, 1, 0, false));
+            sendMessage($chatID, "Hello There!");
             break;
 
         case "!Photo":
